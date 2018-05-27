@@ -1,0 +1,125 @@
+.search {
+  max-width: 1366px;
+  max-height: 100vh;
+  min-height: 100vh;
+  background-color: #3498db;
+}
+
+.search .overlay {
+  position: relative;
+  background-image: url('./images/xde-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  clip-path: polygon(0 0, 80% 0, 65% 100%, 0% 100%);
+}
+
+.search .overlay-color {
+  height: 100vh;
+  background-color: rgba(230, 126, 34, 0.8);
+}
+
+.search .main-logo {
+  position: absolute;
+  top: 3em;
+  height: 8em;
+  margin: 0 6em;
+  left: 0;
+  right: 0;
+}
+
+.search .main-logo img {
+  height: 100%;
+}
+
+.search .quote {
+  position: absolute;
+  top: 10em;
+  margin: 0 6em;
+  left: 0;
+  max-width: 36em;
+}
+
+.search .quote p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 4.5em;
+}
+
+.search .search-box {
+  position: absolute;
+  top: 13em;
+  margin: 0 6em;
+  right: 8em;
+  max-width: 36em;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px 1px rgba(0,0,0,.25);
+  text-align: center;
+  padding: 2.5em 1.5em;
+  max-width: 26em;
+}
+
+.search .search-box::after {
+  position: absolute;
+  top: 0;
+  right: -14em;
+  content: '_';
+  color: transparent;
+  width: 14em;
+  height: 100%;
+  background-color: #2980b9;
+}
+
+.search .search-box img {
+  height: 7em;
+}
+
+.search .search-box h3 {
+  font-size: 1.8em;
+  color: rgba(0,0,0,.6);
+  margin: .25em;
+}
+
+.search .search-box label {
+  display: block;
+  font-size: .9em;
+  color: rgba(0,0,0,.6);
+  margin: .25em;
+  line-height: 1.5em;
+}
+
+.search .search-box input, .search .search-box button {
+  margin-top: 1em;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,.5); 
+  padding: .8em 0;
+  font-size: 1em;
+}
+
+.search .search-box input {
+  width: 16em;
+}
+
+.search .search-box button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.result {
+  color: rgba(0,0,0,.6);
+  margin: 2em;
+  padding: 1em;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px 1px rgba(0,0,0,.25);
+}
+
+.result h2 {
+  display: inline-block;
+}
+
+.result .spinner {
+  display: inline-block;
+  margin-left: .5em;
+}
